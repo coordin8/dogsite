@@ -59,10 +59,19 @@ h1, h2, h3, h4, h5, h6 {
   text-decoration: none;
 }
 
+h1 { font-size: 2em; }
+h2 { font-size: 1.5em; }
+h3 { font-size: 1.17em; }
+h4 { font-size: 1.12em; }
+h5 { font-size: .83em; }
+h6 { font-size: .75em; }
+
+/*
 h1{ font-size: 1.0vw; }
 h2{ font-size: 0.8vw; }
 h3{ font-size: 0.65vw; }
 h4{ font-size: 0.4vw; }
+*/
 
 //////////////////////////////////////////////////////////////
 ////////////////////   List Properties   /////////////////////
