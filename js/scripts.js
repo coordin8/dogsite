@@ -13,6 +13,7 @@
 $(document).ready(function() {
 
   CreateNavBar( );
+  InitSlider( );
 
 });
 
@@ -27,6 +28,11 @@ var navBarButtons = [ 'About', 'Our Dogs', 'Available', 'Pics and Videos', 'Cont
 // generate these buttons dynamically
 function CreateNavBar()
 {
+
+  $('#headerImage').click(function() {
+      window.location.href = './index.html';
+  });
+
 	$( "#mainHeader h1" ).text( 'SoCal Frenchies' );
 
 	// create the buttons to focus each column
@@ -40,8 +46,8 @@ function CreateNavBar()
 
 		$( listItem ).click(function()
 		{
-			
+
 		});
 	}
-	
+
 }

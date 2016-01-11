@@ -39,7 +39,7 @@
   <meta name="msapplication-config" content="/browserconfig.xml">
   <!-- ****** faviconit.com favicons ****** -->
 
-  
+
 </head>
 
 <!-- ============================================== -->
@@ -48,7 +48,13 @@
 
 <body>
 
+
+  <!-- ============================================== -->
+  <!-- ===============   Main Header   ============== -->
+  <!-- ============================================== -->
+
   <header id="mainHeader">
+    <div id="headerImage"><img src="/faviconWhite.png"/></div>
     <h1></h1>
     <ul id="mainHeaderList">
       <!-- these will get added dynacmially -->
@@ -56,52 +62,34 @@
   </header>
 
 
+  <!-- ============================================== -->
+  <!-- =============   Picture Slider   ============= -->
+  <!-- ============================================== -->
 
-  <div id="jssor_1" style="position: relative; margin: 0 auto; top: 0px; left: 0px; width: 800px; height: 456px; overflow: hidden; visibility: hidden; background-color: #24262e;">
-    <!-- Loading Screen -->
-    <div data-u="loading" style="position: absolute; top: 0px; left: 0px;">
-      <div style="filter: alpha(opacity=70); opacity: 0.7; position: absolute; display: block; top: 0px; left: 0px; width: 100%; height: 100%;"></div>
-      <div style="position:absolute;display:block;background:url('css/img/loading.gif') no-repeat center center;top:0px;left:0px;width:100%;height:100%;"></div>
-    </div>
-    <div data-u="slides" style="cursor: default; position: relative; top: 0px; left: 0px; width: 800px; height: 356px; overflow: hidden;">
-      <div data-p="144.50" style="display: none;">
-        <img data-u="image" src="images/IMG_0523.JPG" />
-        <img data-u="thumb" src="images/IMG_0523.JPG" />
-      </div>
-      <div data-p="144.50" style="display: none;">
-        <img data-u="image" src="images/IMG_0524.JPG" />
-        <img data-u="thumb" src="images/IMG_0524.JPG" />
-      </div>
+  <div  id="middle">
 
-      <div data-p="144.50" style="display: none;">
-        <img data-u="image" src="images/IMG_0525.JPG" />
-        <img data-u="thumb" src="images/IMG_0525.JPG" />
+    <div id="mainSlider">
+      <div class="slider_wrapper">
+        <ul id="image_slider">
+          <li><img src="images/IMG_0525.JPG"></li>
+          <li><img src="images/IMG_0526.JPG"></li>
+          <li><img src="images/IMG_0527.JPG"></li>
+        </ul>
+        <span class="nvgt" id="prev"></span>
+        <span class="nvgt" id="next"></span>
       </div>
-
+      <ul id="pager">
+      </ul>
 
     </div>
-    <!-- Thumbnail Navigator -->
-    <div data-u="thumbnavigator" class="jssort01" style="position:absolute;left:0px;bottom:0px;width:800px;height:100px;" data-autocenter="1">
-      <!-- Thumbnail Item Skin Begin -->
-      <div data-u="slides" style="cursor: default;">
-        <div data-u="prototype" class="p">
-          <div class="w">
-            <div data-u="thumbnailtemplate" class="t"></div>
-          </div>
-          <div class="c"></div>
-        </div>
-      </div>
-      <!-- Thumbnail Item Skin End -->
-    </div>
-    <!-- Arrow Navigator -->
-    <span data-u="arrowleft" class="jssora05l" style="top:158px;left:8px;width:40px;height:40px;"></span>
-    <span data-u="arrowright" class="jssora05r" style="top:158px;right:8px;width:40px;height:40px;"></span>
-    <a href="http://www.jssor.com" style="display:none">Bootstrap Carousel</a>
+
   </div>
-
+  <!-- ============================================== -->
+  <!-- =================   Footer   ================= -->
+  <!-- ============================================== -->
 
   <footer>
-    <h5>&copy; Copyright 2016 SoCalFrenchies.com </h5>      
+    <h5>&copy; Copyright 2016 SoCalFrenchies.com </h5>
     <a href="https://twitter.com" class="SocialMediaIcons" id="TwitterIcon" title="Twitter link"></a>
     <a href="https://tumblr.com"  class="SocialMediaIcons" id="TumblrIcon" title="Tumblr link"></a>
     <a href="https://youtube.com" class="SocialMediaIcons" id="YoutubeIcon" title="Youtube link"></a>
