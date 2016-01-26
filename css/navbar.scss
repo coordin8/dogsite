@@ -5,11 +5,11 @@
 
 #mainHeader{
 
-	display: block;
+	display: inline-block;
 	margin: 0;
 	width: 100%;
-	height: $headerHeight;
-	border-bottom: 1px solid #aaa;
+	//height: $headerHeight;
+	border-bottom: 1px solid gray;
 	@include background-image(linear-gradient( #fff, #ddd ));
 
 
@@ -18,12 +18,6 @@
 		float: left;
 		height: $headerHeight;
 		width: $headerHeight;
-
-		img
-		{
-			height: 100%;
-			width: 100%;
-		}
 	}
 
 	h1
@@ -68,7 +62,7 @@
 
 	button:hover
 	{
-		color: grey;
+		color: gray;
 	}
 
   #headerImageHook
@@ -76,13 +70,6 @@
 		float: left;
 		height: auto;
 		width: 100%;
-
-		img
-		{
-			height: auto;
-			width: 100%;
-
-		}
 	}
 
 }

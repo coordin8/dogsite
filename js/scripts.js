@@ -28,7 +28,7 @@ var navBarButtons = [ 'About', 'Our Dogs', 'Available', 'Pics and Videos', 'Cont
 function CreateNavBar()
 {
 
-  $('#headerImageLogo').click(function() {
+  $('#headerLogo').click(function() {
       window.location.href = './index.html';
   });
 
