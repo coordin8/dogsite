@@ -1,0 +1,47 @@
+//////////////////////////////////////////////////////////////
+/////////////////////   Footer Styling   /////////////////////
+//////////////////////////////////////////////////////////////
+
+// local variables
+$iconMargin: 6px;
+$iconSideLength: $footerHeight - 2*$iconMargin;
+
+
+footer
+{
+	border-top: 1px solid #666;
+	width: 100%;
+	height: $footerHeight;
+	@include background-image(linear-gradient( #444, #222 ));
+
+	h5
+	{
+		float: left;
+		width: 50%;
+		line-height: $footerHeight;
+		margin-left: 4px;
+    color: white;
+
+	}
+
+	.SocialMediaIcons
+	{
+		float: right;
+		width: $iconSideLength;
+		height: $iconSideLength;
+		margin: $iconMargin $iconMargin 0 0;
+		background-size: 100% 100%;
+		background-repeat: no-repeat;
+	}
+
+	#EmailIcon{ background-image: url("img/email-gray.png"); }
+	#TwitterIcon{ background-image: url("img/twitter-gray.png"); }
+	#TumblrIcon{ background-image: url("img/tumblr-gray.png"); }
+	#YoutubeIcon{ background-image: url("img/youtube-gray.png"); }
+
+	#EmailIcon:hover{ background-image: url("img/email.png"); }
+	#TwitterIcon:hover{ background-image: url("img/twitter.png"); }
+	#TumblrIcon:hover{ background-image: url("img/tumblr.png"); }
+	#YoutubeIcon:hover{ background-image: url("img/youtube.png"); }
+
+}

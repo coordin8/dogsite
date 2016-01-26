@@ -1,0 +1,88 @@
+
+//////////////////////////////////////////////////////////////
+/////////////////////   Navigation Bar   /////////////////////
+//////////////////////////////////////////////////////////////
+
+#mainHeader{
+
+	display: block;
+	margin: 0;
+	width: 100%;
+	height: $headerHeight;
+	border-bottom: 1px solid #aaa;
+	@include background-image(linear-gradient( #fff, #ddd ));
+
+
+	#headerLogo
+	{
+		float: left;
+		height: $headerHeight;
+		width: $headerHeight;
+
+		img
+		{
+			height: 100%;
+			width: 100%;
+		}
+	}
+
+	h1
+	{
+		float: left;
+		height: 100%;
+		padding-left: 10px;
+		display: table-cell;
+		vertical-align: middle;
+		line-height: $headerHeight;
+		font-size: 1.5vw;
+	}
+
+	ul
+	{
+		float: right;
+		height: 100%;
+		padding: 0 20px 0 0;
+		display: table-cell;
+		vertical-align: middle;
+		line-height: $headerHeight;
+	}
+
+	li
+	{
+		margin: 0;
+		float: right;
+	}
+
+	button
+	{
+		padding: 2px 4px;
+		margin: 0 0 0 5px;
+		font-size: 1.3vw;
+		background: none;
+		border: none;
+		//border: 1px solid #000;
+		//font-size: 0.8vw;
+		//@include background-image(linear-gradient( #777, #000));
+
+	}
+
+	button:hover
+	{
+		color: grey;
+	}
+
+  #headerImageHook
+	{
+		float: left;
+		height: auto;
+		width: 100%;
+
+		img
+		{
+			height: auto;
+			width: 100%;
+
+		}
+	}
+
+}

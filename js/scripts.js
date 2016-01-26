@@ -13,7 +13,6 @@
 $(document).ready(function() {
 
   CreateNavBar( );
-  InitSlider( );
 
 });
 
@@ -29,7 +28,7 @@ var navBarButtons = [ 'About', 'Our Dogs', 'Available', 'Pics and Videos', 'Cont
 function CreateNavBar()
 {
 
-  $('#headerImage').click(function() {
+  $('#headerImageLogo').click(function() {
       window.location.href = './index.html';
   });
 

@@ -13,10 +13,13 @@
   <meta name="description" content="Description Here">
   <meta name="keywords" content="Keywords Here">
   <link rel="stylesheet" href="./css/style.css">
+
+  <!-- DO I NEED THIS?
+  -->
   <link href='http://fonts.googleapis.com/css?family=Maven+Pro:400,500,700' rel='stylesheet' type='text/css'>
 
-
-  <!-- ****** faviconit.com favicons ****** -->
+  <!-- faviconit.com favicons -->
+  <!-- these are needed to display prpoper icons for all browsers/devices   -->
   <link rel="shortcut icon" href="/favicon.ico">
   <link rel="icon" sizes="16x16 32x32 64x64" href="/favicon.ico">
   <link rel="icon" type="image/png" sizes="196x196" href="/favicon-192.png">
@@ -54,36 +57,85 @@
   <!-- ============================================== -->
 
   <header id="mainHeader">
-    <div id="headerImage"><img src="/faviconWhite.png"/></div>
+    <div id="headerLogo"><img src="/favicon-310.png"/></div>
+
     <h1></h1>
     <ul id="mainHeaderList">
       <!-- these will get added dynacmially -->
     </ul>
+
+    <div id="headerImageHook"><img src="images/headerHook.jpg" /></div>
+
   </header>
 
 
+
   <!-- ============================================== -->
-  <!-- =============   Picture Slider   ============= -->
+  <!-- ============   Middle of Website   =========== -->
   <!-- ============================================== -->
 
   <div  id="middle">
 
+
     <div id="mainSlider">
-      <div class="slider_wrapper">
-        <ul id="image_slider">
-          <li><img src="images/IMG_0525.JPG"></li>
-          <li><img src="images/IMG_0526.JPG"></li>
-          <li><img src="images/IMG_0527.JPG"></li>
-        </ul>
-        <span class="nvgt" id="prev"></span>
-        <span class="nvgt" id="next"></span>
-      </div>
-      <ul id="pager">
-      </ul>
+
+        <!-- #start Jssor Slider End -->
+        <div id="jssor_1" style="width: 800px; height: 600px;">
+
+            <!-- Loading Screen -->
+            <div id = "loading" data-u="loading">
+                <div id = "loading_div1"></div>
+                <div id = "loading_div2"></div>
+            </div>
+            <!-- Slide Show -->
+            <div id="slides" data-u="slides" style="width: 800px; height: 600px;">
+                <div style="display: none;">
+                    <img data-u="image" src="images/IMG_0526.JPG" />
+                </div>
+                <div style="display: none;">
+                    <img data-u="image" src="images/IMG_0528.JPG" />
+                </div>
+                <div style="display: none;">
+                    <img data-u="image" src="images/IMG_0529.JPG" />
+                </div>
+                <div style="display: none;">
+                    <img data-u="image" src="images/IMG_0538.JPG" />
+                </div>
+                <div style="display: none;">
+                    <img data-u="image" src="images/IMG_0539.JPG" />
+                </div>
+                <div style="display: none;">
+                    <img data-u="image" src="images/IMG_0540.JPG" />
+                </div>
+            </div>
+            <!-- Bullet Navigator -->
+            <div id = "navSlider" data-u="navigator" class="jssorb13" data-autocenter="1">
+                <!-- bullet navigator item prototype -->
+                <div id = "navSliderBullet" data-u="prototype"></div>
+            </div>
+        </div>
+        <!-- #endregion Jssor Slider End -->
+
+        <div  id="sliderText">
+          <h2> Looking for a French Bull Dog? </h2>
+          <br>
+          <p> This is where all the text that describes what an awesome breeder I am goes.
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+              ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+              aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+              in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+              Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+              officia deserunt mollit anim id est laborum.  </p>
+        </div>
 
     </div>
 
+
+
+
   </div>
+
   <!-- ============================================== -->
   <!-- =================   Footer   ================= -->
   <!-- ============================================== -->
