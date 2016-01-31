@@ -11,6 +11,12 @@ $black: #000;
 $titleBGColor:  #933;
 $titleBGColorHover:  #000;
 
+$themeColor1: #37DA73;
+$themeColor2: #00B64F;
+$themeColor3: #62DA97;
+$themeColor4: #007633;
+
+
 //////////////////////////////////////////////////////////////
 //////////////////////   Global Style   //////////////////////
 //////////////////////////////////////////////////////////////
@@ -37,9 +43,11 @@ html, body
   height: 100%;
 }
 
+p{ text-align: left; }
+
 body
 {
-  background: url('img/repeatableBG.jpg');
+  //background: url('img/repeatableBG.jpg');
   //background-size: 100% 100%;
   //background-repeat: no-repeat;
   //@include background-image(linear-gradient( #333, #222));
@@ -57,6 +65,7 @@ h1, h2, h3, h4, h5, h6 {
   margin-left: 0;
   margin-right: 0;
   text-decoration: none;
+  color: $themeColor1;
 }
 
 h1 { font-size: 2em; }
