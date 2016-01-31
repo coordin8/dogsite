@@ -2,6 +2,7 @@
 @import "./third_party/jquery-1.11.3.js";
 @import "./third_party/jssor.slider.debug.js";
 @import "./slider.js";
+@import "./createDogSliders.js";
 
 
 
