@@ -30,7 +30,7 @@ module.exports = function(grunt) {
         files: [
         {expand: true, src: ['*.html'], dest: 'build/'},
         {expand: true, src: ['favicon*'], dest: 'build/'},
-        {expand: true, src: ['browserconfig.xml'], dest: 'build/'},
+        {expand: true, src: ['icon/*'], dest: 'build/'},
         {expand: true, src: ['images/*'], dest: 'build/'},
         {expand: true, src: ['fonts/*.*'], dest: 'build/'},
         {expand: true, src: ['data/*'], dest: 'build/'},
@@ -89,7 +89,7 @@ module.exports = function(grunt) {
     import: {
       options: {},
       dist: {
-       src: './js/scripts.js',
+       src: './js/main.js',
        dest: './build/js/scripts.js',
      }
 

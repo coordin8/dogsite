@@ -33,7 +33,7 @@ function CreateNavBar()
       window.location.href = './index.html';
   });
 
-	$( "#mainHeader h1" ).text( 'SoCal Frenchies' );
+	$( "#headerTitle" ).text( 'SoCal Frenchies' );
 
 	// create the buttons to focus each column
 	for( columnIndex = navBarButtons.length-1; columnIndex >= 0; columnIndex-- )
