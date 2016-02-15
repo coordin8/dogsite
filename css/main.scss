@@ -1,3 +1,8 @@
+////////////////////////////////////////////////////////////////////////////////
+// Socal Frenchies: Design and Developed by Nathanial Hapeman
+////////////////////////////////////////////////////////////////////////////////
+
+
 // global variables
 $stack: helvetica, arial, sans-serif;
 $headerHeight: 50px;
@@ -6,14 +11,11 @@ $windowHeight: windowHeight+"px";
 $dogImageWidth: 1000px;
 $dogImagHeight: 500px;
 
-
-
-
+// importing other files
 @import "bourbon/bourbon"; // Mixin Library
-@import "global"; // Reset / Global Styles
-@import "navbar"; // Reset / Global Styles
-@import "footer"; // Reset / Global Styles
-
+@import "global";
+@import "navbar";
+@import "footer";
 
 
 //////////////////////////////////////////////////////////////
@@ -30,6 +32,7 @@ $dogImagHeight: 500px;
 	text-align: center;
 	background-color: white;
 	margin-bottom: 50px;
+	margin-top: 50px;
 
 	.slider
 	{
@@ -42,10 +45,8 @@ $dogImagHeight: 500px;
 			width: 40%;
 			float: right;
 			padding: 20px;
-			box-shadow: inset 0 0 5px green;
 		}
 	}
-
 
 	// custom slider styling?
 	#mainSlider
@@ -54,13 +55,9 @@ $dogImagHeight: 500px;
 	}
 	#secondSlider
 	{
-		box-shadow: inset 0 0 5px red;
+		box-shadow: inset 0 0 5px gray;
 	}
-
 }
-
-
-
 
 
 //////////////////////////////////////////////////////////////

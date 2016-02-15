@@ -34,7 +34,6 @@ html, body
 {
   font-size: 100%;
   font-weight: 500;
-  //font-weight: bold;
   font-family: $fontStack;
   line-height: 1.4;
   text-rendering: optimizeLegibility;
@@ -42,6 +41,12 @@ html, body
   -moz-osx-font-smoothing: grayscale;
   width: 100%;
   height: 100%;
+}
+
+button
+{
+  background: none;
+  border: none;
 }
 
 p{ text-align: left; }
@@ -66,17 +71,18 @@ h1, h2, h3, h4, h5, h6 {
   margin-left: 0;
   margin-right: 0;
   text-decoration: none;
-  color: $themeColor2;
+  //color: $themeColor2;
+  color: black;
 }
 
 h1 { font-size: 3em; }
 h2 { font-size: 2em; }
 h3 { font-size: 1.4em; }
 h4 { font-size: 1.12em; }
-h5 { font-size: .83em; }
+h5 { font-size: 1.10em; }
 h6 { font-size: .75em; }
 
-/*
+/* Width based font scaling
 h1{ font-size: 1.0vw; }
 h2{ font-size: 0.8vw; }
 h3{ font-size: 0.65vw; }
@@ -86,7 +92,6 @@ h4{ font-size: 0.4vw; }
 //////////////////////////////////////////////////////////////
 ////////////////////   List Properties   /////////////////////
 //////////////////////////////////////////////////////////////
-
 
 ul
 {
@@ -104,6 +109,7 @@ li
 //////////////////////////////////////////////////////////////
 /////////////////////   Input Styling   //////////////////////
 //////////////////////////////////////////////////////////////
+
 
 fieldset, img {
   border: none;

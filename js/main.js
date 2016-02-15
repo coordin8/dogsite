@@ -14,9 +14,13 @@
 $(document).ready(function() {
 
   CreateNavBar( );
+  ScrollNavBar( );
 
 });
 
+$(window).scroll(function (event) {
+    ScrollNavBar();
+});
 
 
 ////////////////////////////////////////////////////////////////////////////
@@ -33,21 +37,45 @@ function CreateNavBar()
       window.location.href = './index.html';
   });
 
-	$( "#headerTitle" ).text( 'SoCal Frenchies' );
+  $( "#headerTitle" ).text( 'Socal Frenchies' );
+
 
 	// create the buttons to focus each column
 	for( columnIndex = navBarButtons.length-1; columnIndex >= 0; columnIndex-- )
 	{
 		var buttonText = navBarButtons[columnIndex];
-		var button = $('<button></button>').text( buttonText );
-		var listItem = $('<li></li>').append(button);
+    var text = $('<h5></h5>').text( buttonText );
+		var listItem = $('<li></li>').append(text);
 		listItem.attr('id', 'listItem_' + columnIndex );
 		$("#mainHeaderList").append( listItem );
 
 		$( listItem ).click(function()
 		{
-
+      var id = $(this).attr('id');
+      console.log("id clicked: " + id );
 		});
 	}
+}
+
+function ScrollNavBar()
+{
+  var scroll = $(window).scrollTop();
+  console.log( scroll );
+  if( scroll < 20 )
+  {
+    $("#mainHeaderBar").hide();
+    //$("#mainHeaderBar").css("background-color", "transparent");
+    //$("#headerTitle h5").css("color", "white");
+    //$("#mainHeaderList button").css("color", "white");
+
+  }
+  else
+  {
+    $("#mainHeaderBar").show();
+
+    //$("#mainHeaderBar").css("background-color", "#EEE");
+    //$("#headerTitle h5").css("color", "black");
+    //$("#mainHeaderList button").css("color", "black");
+  }
 
 }
