@@ -5,16 +5,22 @@
 // Font Stacks
 $fontStack: sans-serif, serif;
 
+@font-face {
+    font-family:"playfulFont";
+    src: url("playfulFont.otf") /* TTF file for CSS3 browsers */
+}
+
 // Color Scheme
 $white: #fff;
 $black: #000;
 $titleBGColor:  #933;
 $titleBGColorHover:  #000;
 
-$themeColor1: #37DA73;
-$themeColor2: #00B64F;
-$themeColor3: #62DA97;
-$themeColor4: #007633;
+$themeColor0: #A5BFC7;
+$themeColor1: #558190;
+$themeColor2: #26596A;
+$themeColor3: #083645;
+$themeColor4: #01171F;
 
 $h1Height: 3em;
 $h2Height: 2em;

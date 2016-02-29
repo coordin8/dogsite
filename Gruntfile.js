@@ -35,6 +35,8 @@ module.exports = function(grunt) {
         {expand: true, src: ['fonts/*.*'], dest: 'build/'},
         {expand: true, src: ['data/*'], dest: 'build/'},
         {expand: true, src: ['css/img/*'], dest: 'build/'},
+        {expand: true, src: ['css/*.ttf'], dest: 'build/'},
+        {expand: true, src: ['css/*.otf'], dest: 'build/'},
         ],
       },
     },

@@ -27,7 +27,7 @@ $(window).scroll(function (event) {
 ///////////////////////////////   Nav Bar   ////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////
 
-var navBarButtons = [ 'About', 'Our Dogs', 'Available', 'Pics and Videos', 'Contact' ];
+var navBarButtons = [ 'About', 'Available', 'Pics and Videos', 'Contact' ];
 
 // generate these buttons dynamically
 function CreateNavBar()

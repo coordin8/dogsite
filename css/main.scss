@@ -31,33 +31,42 @@ $dogImagHeight: 500px;
 	width: 100%;
 	text-align: center;
 	background-color: white;
-	margin-bottom: 50px;
-	margin-top: 50px;
+	margin-bottom: 30px;
+	margin-top: 30px;
 
 	.slider
 	{
 		display: inline-block;
 		width: 90%;
 		max-width: $dogImageWidth;
+		background-color: $themeColor0;
 
 		.sliderText
 		{
 			width: 40%;
 			float: right;
 			padding: 20px;
+			h2
+			{
+				color: $themeColor2;
+				font-family:'playfulFont', sans-serif;
+
+			}
 		}
 	}
 
 	// custom slider styling?
+
 	#mainSlider
 	{
-		box-shadow: inset 0 0 5px gray;
+		//box-shadow: inset 0 0 5px gray;
 	}
 	#secondSlider
 	{
-		box-shadow: inset 0 0 5px gray;
+		//box-shadow: inset 0 0 5px gray;
 	}
 }
+
 
 
 //////////////////////////////////////////////////////////////
