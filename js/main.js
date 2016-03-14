@@ -1,8 +1,8 @@
 
 @import "./third_party/jquery-1.11.3.js";
 @import "./third_party/jssor.slider.debug.js";
-@import "./slider.js";
-@import "./createDogSliders.js";
+@import "./sliderCMS.js";
+@import "./sliderJssor.js";
 
 
 
@@ -15,6 +15,7 @@ $(document).ready(function() {
 
   CreateNavBar( );
   ScrollNavBar( );
+  SliderCreation( );
 
 });
 
@@ -60,7 +61,6 @@ function CreateNavBar()
 function ScrollNavBar()
 {
   var scroll = $(window).scrollTop();
-  console.log( scroll );
   if( scroll < 20 )
   {
     $("#mainHeaderBar").hide();
@@ -72,7 +72,6 @@ function ScrollNavBar()
   else
   {
     $("#mainHeaderBar").show();
-
     //$("#mainHeaderBar").css("background-color", "#EEE");
     //$("#headerTitle h5").css("color", "black");
     //$("#mainHeaderList button").css("color", "black");

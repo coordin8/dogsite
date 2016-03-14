@@ -6,23 +6,13 @@
 	"dogs":
   [
     {
-      "name": "george",
+      "name": "Welcome! We Sell French Bull Dog Puppies!",
       "about": "I am a very cute dog! You want to buy me! I have a white coat",
       "born": "1/1/2016",
 			"pics":
 				[
 					{ "pic": "img/pic1.jpg" },
 					{ "pic": "img/pic2.jpg" }
-				]
-		},
-    {
-      "name": "daisy",
-      "about": "I am also a very cute dog! You want to buy me! I have a white coat",
-      "born": "2/2/2016",
-			"pics":
-				[
-					{ "pic": "img/pic3.jpg" },
-					{ "pic": "img/pic4.jpg" }
 				]
 		}
   ]

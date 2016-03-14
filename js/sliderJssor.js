@@ -3,16 +3,12 @@ var slideDuration = 1200;
 var sliders = new Array();
 
 
-
-// define jquery function to handle sliding
-jQuery(document).ready(function ($)
+function SliderDesign( )
 {
-
 
   var jssor_1_SlideshowTransitions = [ {$Duration:slideDuration,$Opacity:2} ];
 
-
-  var jssor_1_options = {
+  var normalSliderTransition = {
     $AutoPlay: true,
     $FillMode: 5,
     $SlideshowOptions: {
@@ -26,22 +22,28 @@ jQuery(document).ready(function ($)
   };
 
   // initializing transitions
-  var jssor_1_slider = new $JssorSlider$("jssor_1", jssor_1_options);
-  var jssor_2_slider = new $JssorSlider$("jssor_2", jssor_1_options);
+
+  console.log("called design");
+  var jssor_1_slider = new $JssorSlider$("jssor_1", normalSliderTransition);
+  var jssor_2_slider = new $JssorSlider$("jssor_2", normalSliderTransition);
+  var jssor_3_slider = new $JssorSlider$("jssor_3", normalSliderTransition);
   sliders.push( jssor_1_slider );
   sliders.push( jssor_2_slider );
+  sliders.push( jssor_3_slider );
 
   // could call createDogSliders here!
   InitializeResponsiveCode();
+};
 
-});
+
+
 
 function InitializeResponsiveCode()
 {
+
   //responsive code begin
   function ScaleSlider()
   {
-
     for( var sliderIndex in sliders )
     {
       var slider = sliders[ sliderIndex ];
@@ -56,12 +58,25 @@ function InitializeResponsiveCode()
     }
   }
   ScaleSlider();
-  
+
   // bind window events to it
   $(window).bind("load", ScaleSlider);
   $(window).bind("resize", ScaleSlider);
   $(window).bind("orientationchange", ScaleSlider);
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
