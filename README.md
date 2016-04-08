@@ -1,5 +1,6 @@
 # Static Boilerplate
-My personal starter kit for all static websites I build.
+This is meant to be a starter kit for websites I build.
+It's heavily copied from RobbyK's starter kit (Thanks Rob).
 
 The grunt build task create a production build of the site (placed in `/build`).
 
@@ -26,11 +27,9 @@ grunt build && grunt dev
 
 ```
 grunt build
-``` 
+```
 
 ### Development Mode
 ```
 grunt dev
 ```
-
-
