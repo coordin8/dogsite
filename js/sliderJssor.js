@@ -26,10 +26,10 @@ function SliderDesign( )
   console.log("called design");
   var jssor_1_slider = new $JssorSlider$("jssor_1", normalSliderTransition);
   var jssor_2_slider = new $JssorSlider$("jssor_2", normalSliderTransition);
-  var jssor_3_slider = new $JssorSlider$("jssor_3", normalSliderTransition);
+  //var jssor_3_slider = new $JssorSlider$("jssor_3", normalSliderTransition);
   sliders.push( jssor_1_slider );
   sliders.push( jssor_2_slider );
-  sliders.push( jssor_3_slider );
+  //sliders.push( jssor_3_slider );
 
   // could call createDogSliders here!
   InitializeResponsiveCode();
