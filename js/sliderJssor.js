@@ -2,6 +2,7 @@
 var slideDuration = 1200;
 var sliders = new Array();
 
+/*
 
 function SliderDesign( )
 {
@@ -65,7 +66,7 @@ function InitializeResponsiveCode()
   $(window).bind("orientationchange", ScaleSlider);
 }
 
-
+*/
 
 
 

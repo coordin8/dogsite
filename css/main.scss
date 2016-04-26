@@ -6,6 +6,10 @@
 // importing third party libs
 @import "bourbon/bourbon";
 
+// third party styling
+@import "jcarousel";
+@import "jcarousel_responsive";
+
 // importing local files
 @import "globals";
 @import "header";

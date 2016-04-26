@@ -36,6 +36,7 @@ function SliderCreation()
         var picLoc = pics[picIndex];
       }
 
+      /*
       // start jssor slider creation
       var slider = $("<div>", { class: "slider", id: "mainSlider" }).appendTo( "#middle" ); // id goes back to sliderID
       var jssorSliderWrapper = $("<div>", { class: "jssorSliderWrapper" }).appendTo(slider);
@@ -63,16 +64,16 @@ function SliderCreation()
       var sliderTextHeader = $("<h2>").text("testing testing1").appendTo( sliderText );
       var sliderTextBR = $("<br>").appendTo( sliderText );
       var sliderTextP = $("<p>").text("lordsvcjk kdsfkd dsfkdfk dsfkdfsdk dfdfkl dfglfgl dflgdfgl").appendTo( sliderText );
+      */
 
-
-      console.log("called creation");
+      console.log("Attempted to dynamically create slider");
 
 
       sliderCount++;
     }
 
     // initialize the slider code once done loading
-    SliderDesign( );
+    //SliderDesign( );
 
   });
 }
