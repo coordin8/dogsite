@@ -36,35 +36,15 @@ function SliderCreation()
         var picLoc = pics[picIndex];
       }
 
-      /*
-      // start jssor slider creation
-      var slider = $("<div>", { class: "slider", id: "mainSlider" }).appendTo( "#middle" ); // id goes back to sliderID
-      var jssorSliderWrapper = $("<div>", { class: "jssorSliderWrapper" }).appendTo(slider);
-      var jssorSlider = $("<div>", { class: "jssorSlider", id: "jssor_2" }).css({ "width":"780","height":"580" }).appendTo(jssorSliderWrapper);
-
-
-      // loading screen
-      var loading = $("<div>", { class: "loading" }).data( "u", "loading" ).appendTo(jssorSlider);
-      var loading_div1 = $("<div>", { class: "loading_div1" }).appendTo(loading);
-      var loading_div2 = $("<div>", { class: "loading_div2" }).appendTo(loading);
-
-      // slide show
-      var slides = $("<div>", { class: "slides"}).data( "u", "slides" ).css({ "width":"780","height":"580" }).appendTo(jssorSlider);  //------------ need data-u stuff
-      var oneSlide = $("<div>").css('display','none').appendTo(slides);
-      var oneSlideImg = $("<img>").data( "u", "image" ).attr('src', "images/IMG_0526.JPG" ).appendTo(oneSlide);
-
-      // nav slider
-      var navSlider = $("<div>", { class: "jssorb13", id: "navSlider"}).data( "u", "navigator" ).appendTo(jssorSlider);
-      var navSliderBullet = $("<div>", { id: "navSliderBullet"}).data( {"u" : "prototype", "autocenter" : "1" } ).appendTo(navSlider);
-
-
-
-      // slider text
-      var sliderText = $("<div>", { class: "sliderText" }).appendTo(slider);
-      var sliderTextHeader = $("<h2>").text("testing testing1").appendTo( sliderText );
-      var sliderTextBR = $("<br>").appendTo( sliderText );
-      var sliderTextP = $("<p>").text("lordsvcjk kdsfkd dsfkdfk dsfkdfsdk dfdfkl dfglfgl dflgdfgl").appendTo( sliderText );
-      */
+      // testtttttttttting
+      var doggyData = {
+          name: "test 123",
+          time: "test 456",
+          job: "test 789"
+      };
+      var template = $('#frenchSlider').html();
+      var dogSlider = Mustache.to_html(template, doggyData);
+      $('#middle').append(dogSlider);
 
       console.log("Attempted to dynamically create slider");
 
@@ -73,7 +53,7 @@ function SliderCreation()
     }
 
     // initialize the slider code once done loading
-    //SliderDesign( );
+    JCarouselInit( );
 
   });
 }

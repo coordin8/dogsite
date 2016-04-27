@@ -1,6 +1,7 @@
 
 @import "./third_party/jquery-1.11.3.js";
 @import "./third_party/jcarousel.min.js";
+@import "./third_party/mustache.min.js";
 
 @import "./jcarousel_responsive.js";
 @import "./sliderCMS.js";
