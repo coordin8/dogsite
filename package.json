@@ -24,5 +24,8 @@
     "grunt-contrib-watch": "^1.0.0",
     "grunt-import": "^1.0.3",
     "node-bourbon": "^4.2.3"
+  },
+  "dependencies": {
+    "mustache": "~2.2.1"
   }
 }
