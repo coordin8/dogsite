@@ -13,6 +13,7 @@ footer
 	width: 100%;
 	height: $footerHeight;
 	@include background-image(linear-gradient( #454545, #333 ));
+	float: bottom;
 
 	h6
 	{
