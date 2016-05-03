@@ -5,7 +5,6 @@
 
 @import "./jcarousel_responsive.js";
 @import "./sliderCMS.js";
-@import "./sliderJssor.js";
 
 
 
