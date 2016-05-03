@@ -6,13 +6,23 @@
 	"dogs":
   [
     {
-      "name": "Welcome! We Sell French Bull Dog Puppies!",
-      "about": "I am a very cute dog! You want to buy me! I have a white coat",
-      "born": "1/1/2016",
+      "title": "Welcome! We Sell French Bull Dog Puppies!",
+      "description": "I am a very cute dog! You want to buy me! I have a white coat",
 			"pics":
 				[
-					{ "pic": "img/pic1.jpg" },
-					{ "pic": "img/pic2.jpg" }
+					{ "pic": "images/IMG_0522.JPG" },
+          { "pic": "images/IMG_0529.JPG" },
+					{ "pic": "images/IMG_0526.JPG" }
+				]
+		},
+    {
+      "title": "Add something here!",
+      "description": "I'm still a very cute dog!",
+			"pics":
+				[
+					{ "pic": "images/IMG_0523.JPG" },
+          { "pic": "images/IMG_0525.JPG" },
+					{ "pic": "images/IMG_0531.JPG" }
 				]
 		}
   ]

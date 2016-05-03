@@ -23,33 +23,20 @@ function SliderCreation()
     // populating website with dogs
     for( var dogIndex in dogs )
     {
-
-      var name = dogs[dogIndex].name;
-      var about = dogs[dogIndex].about;
-      var born = dogs[dogIndex].born;
-      var pics = dogs[dogIndex].pics;
+      var dogXML = dogs[dogIndex];
       var sliderID = "slider_" + sliderCount;
+      sliderCount++;
 
-      // temp printing of data
-      for( var picIndex in pics )
-      {
-        var picLoc = pics[picIndex];
-      }
-
-      // testtttttttttting
+      // setup mustache data
       var doggyData = {
-          name: "test 123",
-          time: "test 456",
-          job: "test 789"
+          title: dogXML.title,
+          description: dogXML.description,
+          pics: dogXML.pics
       };
       var template = $('#frenchSlider').html();
       var dogSlider = Mustache.to_html(template, doggyData);
       $('#middle').append(dogSlider);
 
-      console.log("Attempted to dynamically create slider");
-
-
-      sliderCount++;
     }
 
     // initialize the slider code once done loading

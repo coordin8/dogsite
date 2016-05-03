@@ -86,23 +86,17 @@
       <div class="jcarousel-wrapper">
         <div class="jcarousel">
           <ul>
-            <li><img src="images/IMG_0526.JPG" alt="Image 2"></li>
-            <li><img src="images/IMG_0522.JPG" alt="Image 2"></li>
-            <li><img src="images/IMG_0529.JPG" alt="Image 2"></li>
+            {{#pics}}<li><img src="{{pic}}"></img></li>{{/pics}}
           </ul>
         </div>
-
         <a href="#" class="jcarousel-control-prev">&lsaquo;</a>
         <a href="#" class="jcarousel-control-next">&rsaquo;</a>
-
         <p class="jcarousel-pagination"></p>
       </div>
       <div class="sliderText">
-        <h2> Welcome! We Sell French Bull Dog Puppies! </h2>
+        <h2> {{title}} </h2>
         <br>
-        <p> This is where all the text that describes what an awesome breeder I am goes. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-          ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-          mollit anim id est laborum. </p>
+        <p> {{description}} </p>
       </div>
     </div>
     </script>
